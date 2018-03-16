@@ -3,16 +3,16 @@
 int main() 
 {
 	char a[100];
-	int n,i,j,temp=0;
+	int n,i,j,t=0;
 	scanf("%s",a);
 	n=strlen(a);
 	if(n%2==0)
 	{
 	for(i=0;i<n;i+=2)
 	{
-	    temp=a[i];
+	    t=a[i];
 	    a[i]=a[i+1];
-	    a[i+1]=temp;
+	    a[i+1]=t;
 	}
 	printf("%s",a);
 	}
@@ -20,11 +20,11 @@ int main()
 	{
 	for(i=0;i<n;i+=2)
 	{
-	    temp=a[i];
+	    t=a[i];
 	    a[i]=a[i+1];
-	    a[i+1]=temp;
+	    a[i+1]=t;
 	}
-	printf("%s%c",a,temp);  
+	printf("%s%c",a,t);  
 	}
 
 }
