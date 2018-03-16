@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include<string.h>
 int main(void) {
-	char str[50];
-	scanf("%s",str);
-	strcat(str,".");
-	printf("%s",str);
+	char m[50];
+	scanf("%s",m);
+	strcat(m,".");
+	printf("%s",m);
 	return 0;
 }
