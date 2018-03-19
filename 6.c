@@ -3,7 +3,7 @@
 int main(void) {
 	char a[100],b[100];
 	scanf("%s %s",a,b);
-	int m,n,i,j,u,v,w,x,y,z,flag=0;
+	int m,n,i,j,u,v,w,x,y,z,l=0;
 	m=strlen(a);
 	n=strlen(b);
 	if(m==n)
@@ -20,11 +20,11 @@ int main(void) {
 			z=w-x;
 			if(y==z)
 			{
-				flag=1;
+				l=1;
 			}
 			else
 			{
-				flag=0;
+				l=0;
 				break;
 			}
 		}
@@ -34,7 +34,7 @@ int main(void) {
 	{
 		printf("no");
 	}
-	if(flag==1)
+	if(l==1)
 	{
 		printf("yes");
 	}
